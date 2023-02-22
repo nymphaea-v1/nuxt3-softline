@@ -1,5 +1,5 @@
 %container {
-  max-width: 1250px;
+  max-width: $break-laptop-max;
   margin: 0 auto;
   padding: 0 70px;
 }
@@ -9,11 +9,16 @@
   margin: 0 auto;
 }
 
-@media (max-width: 480px) {
+@media (max-width: $break-laptop-max) {
+  %container {
+    max-width: 1130px;
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: $break-phone-max) {
   %container {
     max-width: 290px;
     padding: 0 5px;
-
-    background-color: red;
   }
 }
