@@ -1,0 +1,19 @@
+%container {
+  max-width: 1250px;
+  margin: 0 auto;
+  padding: 0 70px;
+}
+
+%small-container {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+@media (max-width: 480px) {
+  %container {
+    max-width: 290px;
+    padding: 0 5px;
+
+    background-color: red;
+  }
+}
