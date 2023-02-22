@@ -42,6 +42,14 @@
   }
 }
 
+@media (max-width: $break-table-max) {
+  .header {
+    &__lines-of-business {
+      width: 100%;
+    }
+  }
+}
+
 @media (max-width: $break-phone-max) {
   .header {
     &__lines-of-business {
