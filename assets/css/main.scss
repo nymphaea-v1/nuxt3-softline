@@ -1,3 +1,5 @@
+@import "fonts";
+
 *,
 *::before,
 *::after {
@@ -9,6 +11,7 @@
 body {
   color: $gray;
   font-size: 18px;
+  font-family: "Proxima Nova Condensed", Garamond, sans-serif;
   line-height: 110%;
 }
 
