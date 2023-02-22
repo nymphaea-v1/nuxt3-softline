@@ -2,6 +2,7 @@
   <div class="content">
     <c-banner class="content__section" />
     <c-about class="content__section" />
+    <c-numbers class="content__section" />
   </div>
 </template>
 
