@@ -16,13 +16,16 @@
 
 <style scoped lang="scss">
 .header {
+  @extend %container;
+
   display: flex;
   flex-wrap: wrap;
   gap: 16px;
   align-content: center;
   align-items: center;
   min-height: 85px;
-  padding: 16px 0;
+  padding-top: 16px;
+  padding-bottom: 16px;
 
   &__logo {
     margin-right: auto;

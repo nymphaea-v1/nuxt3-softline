@@ -1,14 +1,6 @@
 <template>
-  <div class="container">
-    <c-header />
-    <div class="main">
-      <nuxt-page />
-    </div>
+  <c-header />
+  <div class="main">
+    <nuxt-page />
   </div>
 </template>
-
-<style lang="scss">
-.container {
-  @extend %container;
-}
-</style>
