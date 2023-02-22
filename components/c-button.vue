@@ -35,4 +35,13 @@
     pointer-events: none;
   }
 }
+
+@media (max-width: $break-phone-max) {
+  .button {
+    padding: 6.5px 25.5px;
+
+    font-size: 16px;
+    line-height: 19px;
+  }
+}
 </style>
