@@ -5,5 +5,7 @@ $gray: #444444;
 $icon-background: rgb(0 0 0 / 5%);
 
 $break-phone-max: 480px;
-$break-table-max: 820px;
-$break-laptop-max: 1250px;
+$break-table-min: 481px;
+$break-table-max: 905px;
+$break-laptop-min: 906px;
+$break-laptop-max: 1290px;
