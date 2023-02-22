@@ -4,11 +4,6 @@
   padding: 0 70px;
 }
 
-%small-container {
-  max-width: 890px;
-  margin: 0 auto;
-}
-
 @media (max-width: $break-laptop-max) {
   %container {
     max-width: 1130px;
@@ -20,5 +15,26 @@
   %container {
     max-width: 290px;
     padding: 0 5px;
+  }
+}
+
+%small-container {
+  max-width: 890px;
+  margin: 0 auto;
+}
+
+%button-reset {
+  border: none;
+
+  color: inherit;
+  font-weight: bold;
+  font-size: inherit;
+  font-family: inherit;
+  line-height: inherit;
+
+  background: none;
+
+  &:hover {
+    cursor: pointer;
   }
 }
