@@ -1,0 +1,27 @@
+{
+  "extends": [
+    "stylelint-config-standard",
+    "stylelint-config-standard-scss",
+    "stylelint-config-rational-order",
+    "stylelint-config-html"
+  ],
+  "rules": {
+    "color-hex-length": "long",
+    "declaration-empty-line-before": null,
+    "selector-class-pattern": null,
+    "selector-id-pattern": null,
+    "plugin/rational-order": [true, {
+      "border-in-box-model": true,
+      "empty-line-between-groups": true,
+      "no-empty-lines-between-properties": true
+    }]
+  },
+  "overrides": [
+    {
+      "files": ["@/assets/css/_variables.scss"],
+      "rules": {
+        "scss/dollar-variable-empty-line-before": null
+      }
+    }
+  ]
+}
