@@ -1,19 +1,28 @@
 %container {
-  max-width: $break-laptop-max;
+  max-width: 1250px;
   margin: 0 auto;
   padding: 0 70px;
 }
 
-@media (max-width: $break-laptop-max) {
+@media (min-width: $break-laptop-min) and (max-width: $break-laptop-max) {
   %container {
-    max-width: 1130px;
+    max-width: 100%;
+    margin: 0 20px;
+  }
+}
+
+@media (min-width: $break-table-min) and (max-width: $break-table-max) {
+  %container {
+    max-width: 100%;
+    margin: 0 20px;
     padding: 0 10px;
   }
 }
 
 @media (max-width: $break-phone-max) {
   %container {
-    max-width: 290px;
+    max-width: 100%;
+    margin: 0 15px;
     padding: 0 5px;
   }
 }
