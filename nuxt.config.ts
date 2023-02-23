@@ -1,3 +1,4 @@
+import path from 'path'
 import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineNuxtConfig({
@@ -20,7 +21,7 @@ export default defineNuxtConfig({
     },
     plugins: [
       createSvgIconsPlugin({
-        iconDirs: ['~/assets/icons'],
+        iconDirs: [path.resolve(__dirname, 'assets/icons')],
         symbolId: 'icon-[name]',
         customDomId: 'svg-sprite'
       })
