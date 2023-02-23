@@ -22,6 +22,14 @@
       "rules": {
         "scss/dollar-variable-empty-line-before": null
       }
+    },
+    {
+      "files": ["*.vue", "**/*.vue"],
+      "rules": {
+        "value-keyword-case": ["lower",
+          { "ignoreFunctions": ["v-bind"] }
+        ]
+      }
     }
   ]
 }
