@@ -1,4 +1,5 @@
-// https://nuxt.com/docs/api/configuration/nuxt-config
+import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
+
 export default defineNuxtConfig({
   app: {
     head: {
@@ -16,6 +17,13 @@ export default defineNuxtConfig({
           additionalData: '@import "@/assets/css/shared.scss";'
         }
       }
-    }
+    },
+    plugins: [
+      createSvgIconsPlugin({
+        iconDirs: ['~/assets/icons'],
+        symbolId: 'icon-[name]',
+        customDomId: 'svg-sprite'
+      })
+    ]
   }
 })
