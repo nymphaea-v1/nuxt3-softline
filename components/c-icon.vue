@@ -14,7 +14,7 @@ const id = computed(() => `#icon-${props.name}`)
 
 <style>
 #svg-sprite symbol path {
-  fill: currentcolor;
+  /* fill: currentcolor; */
 }
 </style>
 
