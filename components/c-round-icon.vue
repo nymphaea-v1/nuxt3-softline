@@ -18,7 +18,9 @@ defineProps<{ name: string }>()
 
 <style scoped lang="scss">
 .round-icon {
-  width: max-content;
+  --icon-width: 48px;
+
+  width: 178px;
 
   &__icon-wrapper {
     width: 110px;
@@ -33,14 +35,12 @@ defineProps<{ name: string }>()
 
   &__icon {
     display: block;
-    width: 48px;
+    width: var(--icon-width);
     height: 100%;
     margin: 0 auto;
   }
 
   &__description {
-    width: 178px;
-
     font-size: 18px;
     line-height: 110%;
     text-align: center;
@@ -49,18 +49,16 @@ defineProps<{ name: string }>()
 
 @media (max-width: $break-phone-max) {
   .round-icon {
+    --icon-width: 34px;
+
+    width: 120px;
+
     &__icon-wrapper {
       width: 80px;
       height: 80px;
     }
 
-    &__icon {
-      width: 34px;
-    }
-
     &__description {
-      width: 120px;
-
       font-size: 16px;
     }
   }
