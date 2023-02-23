@@ -38,3 +38,21 @@ h1 {
     font-size: 28px;
   }
 }
+
+h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 120%;
+}
+
+@media (min-width: $break-table-min) and (max-width: $break-table-max) {
+  h2 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: $break-phone-max) {
+  h2 {
+    font-size: 22px;
+  }
+}
