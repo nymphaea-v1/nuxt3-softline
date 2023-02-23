@@ -68,6 +68,7 @@
     height: 80%;
 
     transform: translateY(-50%);
+    opacity: 0.3;
 
     &_left {
       left: -48px;
