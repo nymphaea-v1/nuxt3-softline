@@ -19,13 +19,17 @@ defineProps<{ name: string }>()
 <style scoped lang="scss">
 .round-icon {
   --icon-width: 48px;
+  --cirle-size: 110px;
 
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
   width: 178px;
 
   &__icon-wrapper {
-    width: 110px;
-    height: 110px;
-    margin: 0 auto 10px;
+    width: var(--cirle-size);
+    height: var(--cirle-size);
     border-radius: 50%;
 
     color: $primary;
@@ -54,8 +58,7 @@ defineProps<{ name: string }>()
     width: 120px;
 
     &__icon-wrapper {
-      width: 80px;
-      height: 80px;
+      --cirle-size: 80px;
     }
 
     &__description {
