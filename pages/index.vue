@@ -6,6 +6,7 @@
     <c-mission class="content__section" />
     <c-lines-of-business class="content__section" />
     <c-benefits class="content__section" />
+    <c-gallery class="content__section" />
   </div>
 </template>
 
