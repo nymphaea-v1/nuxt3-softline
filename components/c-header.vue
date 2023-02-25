@@ -2,7 +2,7 @@
   <div class="header">
     <img
       src="~/assets/images/logo.svg"
-      alt="Softline logo"
+      alt="Логотип Softline"
       class="header__logo"
     >
     <div class="header__lines-of-business">
