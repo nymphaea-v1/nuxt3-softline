@@ -3,6 +3,7 @@ import { createSvgIconsPlugin } from 'vite-plugin-svg-icons'
 
 export default defineNuxtConfig({
   app: {
+    baseURL: '/nuxt3-softline/',
     head: {
       title: 'Softline',
       meta: [
