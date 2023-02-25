@@ -247,6 +247,8 @@ const filterCityName = (city: string) => {
     position: relative;
 
     &:hover {
+      color: $primary-edgy;
+
       cursor: pointer;
     }
 
